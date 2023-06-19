@@ -7,12 +7,13 @@ public class SlackAlarmDecorator extends AlarmDecorator {// 얘는 Decorator를 
     }
 
     @Override
-    public void sendMessage(String message) {
-    	System.out.println("슬랙 전송");
-        super.sendMessage(slackFormat(message));
+    public void sendMessage(LoginFailureEvent event) {
+    	sendSlack(event);
+        super.sendMessage(event);
     }
 
-    private String slackFormat(String comment) {
-        return comment.replace("...", "");
+    private void sendSlack(LoginFailureEvent event) {
+    	System.out.println("슬랙 전송 LoginFailSlackAlarmService 호출: " + event);
+
     }
 }

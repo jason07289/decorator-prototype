@@ -7,14 +7,13 @@ public class EmailAlarmDecorator extends AlarmDecorator {
     }
 
     @Override
-    public void sendMessage(String message) {
-    	System.out.println("이메일 전송 LoginFailEmailAlarmService 호출");
-//        if (isNotSpam(message)) {
-        super.sendMessage(message);
-//        }
+    public void sendMessage(LoginFailureEvent event) {
+    	
+    	sendEmail(event);
+        super.sendMessage(event);
     }
 
-    private boolean isNotSpam(String comment) {
-        return !comment.contains("http");
+    private void sendEmail(LoginFailureEvent event) {
+    	System.out.println("이메일 전송 LoginFailEmailAlarmService 호출: " + event);
     }
 }

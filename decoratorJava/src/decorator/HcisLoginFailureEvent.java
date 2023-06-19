@@ -8,7 +8,7 @@ public class HcisLoginFailureEvent {
         this.alarmService = alarmService;
     }
 
-    public void failCount5(String message) {
-    	alarmService.sendMessage(message);
+    public void failCount5(LoginFailureEvent event) {
+    	alarmService.sendMessage(event);
     }
 }
