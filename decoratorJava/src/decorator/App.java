@@ -19,7 +19,7 @@ public class App {//= 이벤트 발생하는 Class
 
         HcisLoginFailureEvent client = new HcisLoginFailureEvent(alarmService);
         
-        LoginFailureEvent loginFailureEvent = new LoginFailureEvent("jaeh0728","127.0.0.1",5);
+        LoginFailureMessage loginFailureEvent = new LoginFailureMessage("jaeh0728","127.0.0.1",5);
         client.failCount5(loginFailureEvent);
     }
 }

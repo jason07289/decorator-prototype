@@ -1,6 +1,6 @@
 package decorator;
 
-public class LoginFailureEvent {
+public class LoginFailureMessage {
 	private String loginId;
 	private String ip;
 	private int failCount;
@@ -18,7 +18,7 @@ public class LoginFailureEvent {
 	}
 	
 
-	public LoginFailureEvent(String loginId, String ip, int failCount) {
+	public LoginFailureMessage(String loginId, String ip, int failCount) {
 		super();
 		this.loginId = loginId;
 		this.ip = ip;
@@ -27,7 +27,7 @@ public class LoginFailureEvent {
 
 	@Override
 	public String toString() {
-		return "LoginFailureEvent [loginId=" + loginId + ", ip=" + ip + ", failCount=" + failCount + "]";
+		return "LoginFailureMessage [loginId=" + loginId + ", ip=" + ip + ", failCount=" + failCount + "]";
 	}
 	
 	

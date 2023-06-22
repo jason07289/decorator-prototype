@@ -9,7 +9,7 @@ public class AlarmDecorator implements AlarmService {
     }
 
 	@Override
-	public void sendMessage(LoginFailureEvent event) {
+	public void sendMessage(LoginFailureMessage event) {
 		alarmService.sendMessage(event);
 	}
 }
