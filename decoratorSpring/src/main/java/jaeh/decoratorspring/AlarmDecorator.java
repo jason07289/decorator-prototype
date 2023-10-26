@@ -1,5 +1,6 @@
 package jaeh.decoratorspring;
 
+
 public class AlarmDecorator implements AlarmService {
 
     private AlarmService alarmService;

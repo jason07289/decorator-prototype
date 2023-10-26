@@ -8,6 +8,8 @@ public class DecoratorSpringApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DecoratorSpringApplication.class, args);
+
+		Client.callService();
 	}
 
 }
