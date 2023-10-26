@@ -1,6 +1,9 @@
-package jaeh.decoratorspring;
+package jaeh.decoratorspring.service.alarm;
 
-public class SlackAlarmDecorator extends AlarmDecorator {// 얘는 Decorator를 상속  
+import jaeh.decoratorspring.AlarmService;
+import jaeh.decoratorspring.LoginFailureMessage;
+
+public class SlackAlarmDecorator extends AlarmDecorator {// 얘는 Decorator를 상속
 
     public SlackAlarmDecorator(AlarmService alarmService) {
         super(alarmService);
