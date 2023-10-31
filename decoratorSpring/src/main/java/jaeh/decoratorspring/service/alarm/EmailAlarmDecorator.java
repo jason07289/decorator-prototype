@@ -1,7 +1,6 @@
 package jaeh.decoratorspring.service.alarm;
 
-import jaeh.decoratorspring.AlarmService;
-import jaeh.decoratorspring.LoginFailureMessage;
+import jaeh.decoratorspring.client.LoginFailureMessage;
 
 public class EmailAlarmDecorator extends AlarmDecorator {
 

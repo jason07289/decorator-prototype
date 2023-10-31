@@ -1,7 +1,6 @@
 package jaeh.decoratorspring.service.alarm;
 
-import jaeh.decoratorspring.AlarmService;
-import jaeh.decoratorspring.LoginFailureMessage;
+import jaeh.decoratorspring.client.LoginFailureMessage;
 
 public class SlackAlarmDecorator extends AlarmDecorator {// 얘는 Decorator를 상속
 
@@ -19,4 +18,5 @@ public class SlackAlarmDecorator extends AlarmDecorator {// 얘는 Decorator를 
     	System.out.println("슬랙 전송 LoginFailSlackAlarmService 호출: " + event);
 
     }
+
 }

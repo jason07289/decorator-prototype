@@ -1,5 +1,7 @@
 package jaeh.decoratorspring;
 
+import jaeh.decoratorspring.client.clientService;
+import jaeh.decoratorspring.service.alarm.AlarmCallService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,7 +17,7 @@ public class DecoratorSpringApplication {
 	private final ApplicationContext context;
 	public static void main(String[] args) {
 		SpringApplication.run(DecoratorSpringApplication.class, args);
-		BeanContext.get(ClientService.class).callService();
+		BeanContext.get(clientService.class).failCount5();
 	}
 	@PostConstruct
 	public void init(){

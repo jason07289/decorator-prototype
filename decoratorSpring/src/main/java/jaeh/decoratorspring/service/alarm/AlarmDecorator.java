@@ -1,12 +1,11 @@
 package jaeh.decoratorspring.service.alarm;
 
 
-import jaeh.decoratorspring.AlarmService;
-import jaeh.decoratorspring.LoginFailureMessage;
+import jaeh.decoratorspring.client.LoginFailureMessage;
 
 public class AlarmDecorator implements AlarmService {
 
-    private AlarmService alarmService;
+    private final AlarmService alarmService;
 
     public AlarmDecorator(AlarmService alarmService) {
         this.alarmService = alarmService;
@@ -16,4 +15,5 @@ public class AlarmDecorator implements AlarmService {
 	public void sendMessage(LoginFailureMessage event) {
 		alarmService.sendMessage(event);
 	}
+
 }

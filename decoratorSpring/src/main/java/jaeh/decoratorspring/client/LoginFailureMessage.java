@@ -1,4 +1,4 @@
-package jaeh.decoratorspring;
+package jaeh.decoratorspring.client;
 
 public class LoginFailureMessage {
 	private String loginId;
